@@ -28,6 +28,7 @@ h1 {
   display: none;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .showing {
@@ -54,4 +55,9 @@ h1 {
 
   z-index: -1;
   animation: fadeIn 1s linear;
+}
+
+.js-toDoList {
+  color: white;
+  list-style: none;
 }
