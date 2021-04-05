@@ -59,7 +59,6 @@ function handleSubmit(event) {
 //로컬스토리지에 저장된 것을 불러옴
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
-  console.log(loadedToDos);
   if (loadedToDos !== null) {
     const parsedToDos = JSON.parse(loadedToDos);
     //스토리지에 저장된 값이 문자열인데 이를 자바스크립트에 맞추어 주는 기능

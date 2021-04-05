@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Somthing</title>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./CSS/Index.css">
 </head>
+
 <body>
-	<div class="js-clock">
-		<h1>00:00</h1>
-	</div>
-	<form class="js-form form">
-		<input type="text" placeholder="What is your name?">
-	</form>
-	<h4 class="js-greetings greetings"></h4>
-	<form class="js-toDoForm">
-		<input type="text" placeholder="Write a to do">
-	</form>
-	<ul class="js-toDoList"></ul>
-	<span class="js-weather"></span>
+	<section class="center">
+		<!-- 날씨 출력 -->
+		<span class="js-weather"></span>
+
+		<!-- 시계 출력 -->
+		<div class="js-clock">
+			<h1>00:00</h1>
+		</div>
+
+		<!-- 이름 입력 -->
+		<form class="js-form form">
+			<input type="text" placeholder="What is your name?" class="name__input">
+		</form>
+		<h4 class="js-greetings greetings"></h4><br>
+
+		<!-- 할 일 입력 -->
+		<form class="js-toDoForm">
+			<input type="text" placeholder="Write a to do" class="todolist_input">
+		</form>
+		<ul class="js-toDoList"></ul>
+	</section>
 	<script src="./JS/clock.js"></script>
 	<script src="./JS/greetting.js"></script>
 	<script src="./JS/todo.js"></script>
 	<script src="./JS/bg.js"></script>
 	<script src="./JS/weather.js"></script>
 </body>
+
 </html>
